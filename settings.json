@@ -1,0 +1,23 @@
+{
+    // General
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.rulers": [90],
+
+    // Vim config
+    "vim.leader": "<space>",
+    "vim.smartRelativeLine": true,
+    "vim.useSystemClipboard": true,
+
+    // Vim key-bindings
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "o"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+    ],
+}
