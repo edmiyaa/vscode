@@ -19,5 +19,9 @@
             "before": ["<leader>", "p"],
             "commands": ["workbench.action.showCommands"]
         },
+        {
+            "before": ["<leader>", "x", "p"],
+            "commands": ["workbench.action.files.save", "python.execInTerminal-icon"]
+        },
     ],
 }
