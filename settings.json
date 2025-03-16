@@ -1,5 +1,6 @@
 {
     // General
+    "editor.smoothScrolling": true,
     "editor.rulers": [90],
     "security.workspace.trust.untrustedFiles": "open",
 
@@ -14,14 +15,42 @@
     // Vim key-bindings
     "vim.normalModeKeyBindings": [
         {
-            "before": ["<leader>", "o"],
+            // Fold all
+            "before": ["<leader>", "f", "a"],
+            "commands": ["editor.foldAll"]
+        },
+        {
+            // Unfold all
+            "before": ["<leader>", "f", "A"],
+            "commands": ["editor.unfoldAll"]
+        },
+        {
+            // Fold current
+            "before": ["<leader>", "f", "c"],
+            "commands": ["editor.fold"]
+        },
+        {
+            // Unfold current
+            "before": ["<leader>", "f", "C"],
+            "commands": ["editor.unfold"]
+        },
+        {
+            // Go to definition
+            "before": ["<leader>", "g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        {
+            // Open Command Palette
+            "before": ["<leader>", "p"],
             "commands": ["workbench.action.quickOpen"]
         },
         {
-            "before": ["<leader>", "p"],
-            "commands": ["workbench.action.showCommands"]
+            // Open Keyboard shortcuts
+            "before": ["<leader>", "o", "k"],
+            "commands": ["workbench.action.openGlobalKeybindings"]
         },
         {
+            // Save current file and execute it as a Python script
             "before": ["<leader>", "x", "p"],
             "commands": ["workbench.action.files.save", "python.execInTerminal-icon"]
         },
