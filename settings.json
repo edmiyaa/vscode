@@ -1,8 +1,10 @@
 {
     // General
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.iconTheme": "material-icon-theme",
     "editor.rulers": [90],
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // Themes
+    "workbench.iconTheme": "material-icon-theme",
 
     // Vim config
     "vim.leader": "<space>",
