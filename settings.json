@@ -6,6 +6,7 @@
 
     // Themes
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "FireFly Pro Bright",
 
     // Vim config
     "vim.leader": "<space>",
